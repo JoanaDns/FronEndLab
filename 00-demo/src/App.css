@@ -1,0 +1,21 @@
+
+H1{
+  background-color: hsl(272, 48%, 16%);
+  padding: 25px;
+  color: black;
+  text-align: center;
+}
+
+.cont-app{
+  background-color: #bbb0a28a;
+  
+}
+
+ul{
+  padding: 40px;
+}
+
+H2{
+  padding: 12px;
+  text-align: center;
+}
