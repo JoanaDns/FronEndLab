@@ -27,6 +27,17 @@ function App() {
       <li>Garantia de Qualidade e Suporte</li>
       <li>Vendas Técnicas e Sucesso do Cliente</li>
     </ul>
+    <h3>Vou fazer faculdade de outra coisa, ser dev vai me ajudar?</h3>
+    <p4>Fazer outra faculdade tendo bagagem de dev não é "jogar conhecimento fora" — é ganhar um superpoder estratégico. No mercado moderno, o profissional mais valioso raramente é o especialista puro de uma única área, mas sim o profissional em "T": alguém com conhecimento profundo em um domínio específico (Sua Nova Faculdade) e alta capacidade técnica transversal (Sua Bagagem de Dev).</p4>
+    <p5>Aqui está como você pode aplicar suas habilidades de programação em diferentes áreas do conhecimento:</p5>
+    
+    <ul>
+      <li>Automação e Produtividade Pessoal</li>
+      <li>Eliminação de Trabalho Braçal</li>
+      <li>Criação de Ferramentas Próprias</li>
+      <li>Análise de Dados Avançada e Pesquisa Científica</li>
+      <li>Empreendedorismo e Soluções Setoriais (HealthTech, LegalTech, EdTech)</li>
+    </ul>
     
     </div>
 

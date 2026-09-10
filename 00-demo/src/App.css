@@ -1,7 +1,7 @@
 
 H1{
   background-color: hsl(272, 48%, 16%);
-  padding: 25px;
+  padding: 42px;
   color: black;
   text-align: center;
 }
@@ -16,6 +16,11 @@ ul{
 }
 
 H2{
-  padding: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+H3{
+  padding: 20px;
   text-align: center;
 }
