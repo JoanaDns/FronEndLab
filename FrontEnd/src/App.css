@@ -180,5 +180,16 @@
   &::after {
     right: 0;
     border-right-color: var(--border);
+
   }
+} 
+  
+
+button{
+ border-radius: 9px;
+ background-color: rgba(0, 0, 255, 0.308);
+ height: 40px;
+ margin: 20px;
+ font-size: 30px;
 }
+
