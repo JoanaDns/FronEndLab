@@ -179,6 +179,11 @@ function App() {
       <button onClick={obra}>Obras</button>
 
      <hr />
+
+      <button onClick={ração}>Ração</button>
+
+     <hr />
+
       <button onClick={teste}>Teste</button>
 
      <hr />
