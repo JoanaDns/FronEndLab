@@ -1,6 +1,9 @@
 import './App.css'
 import Jogo from './components/Jogo'
 import Pousada from './components/Pousada'
+import Eleicao from './components/Eleicao'
+import Peso from './components/Peso'
+import Maca from './components/Maca'
 
 function App() {
 
@@ -10,6 +13,9 @@ function App() {
 
         <Jogo />
         <Pousada/>
+        <Eleicao/>
+        <Peso/>
+        <Maca/>
 
     </div>
     
