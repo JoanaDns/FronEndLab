@@ -11,6 +11,7 @@ import Eventos from './components/Eventos'
 import Entrada from './components/Entrada'
 import Manutencao from './components/Manutencao'
 import Comando from './components/comando'
+import Jaula from './components/Jaula'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
          <Entrada/>
          <Manutencao/>
          <Comando/>
+         <Jaula/>
 
          <hr />
 
