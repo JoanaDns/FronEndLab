@@ -1,9 +1,161 @@
-.h1{
-  font-size: 2px;
-  background-color: color rgb(22, 1, 43);
+/* --- Contentor Principal --- */
+.app-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.h3{
-  font-size: 1px;
-  background-color: black;
+/* --- Menu de Botões (Navegação) --- */
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 24px; /* Bastante espaço entre os botões */
+  width: 100%;
+}
+
+.nav-buttons button {
+  background-color: #ffffff;       /* Botão branco */
+  color: #ff1493;                  /* Letra rosa pink */
+  border: 2px solid #ff1493;       /* Borda rosa pink */
+  padding: 16px 32px;              /* Botão grande */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 999px;            /* Totalmente arredondado */
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 20, 147, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-buttons button:hover {
+  background-color: #ff1493;
+  color: #ffffff;                  /* Inverte para letra branca ao passar o mouse */
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.28);
+}
+
+.nav-buttons button.active {
+  background-color: #ff1493;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(255, 20, 147, 0.32);
+}
+
+/* --- Título Principal --- */
+.app-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #2d3748;
+  letter-spacing: -1px;
+}
+
+/* Palavra em Destaque Rosa */
+.app-title .highlight-pink {
+  color: #ff1493;
+  text-shadow: 0 4px 14px rgba(255, 20, 147, 0.25);
+}
+
+/* --- Cartão da Oração --- */
+.prayer-card {
+  background-color: #ffffff;
+  border: 2px solid #fbcfe8;
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 12px 32px rgba(255, 182, 193, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.prayer-text {
+  font-size: 1.25rem;
+  color: #334155;
+  max-width: 750px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Destaque para comandos de código */
+.prayer-text code {
+  font-family: 'Fira Code', monospace;
+  background-color: #ffe6f0;
+  color: #ff1493;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid #fbcfe8;
+  font-weight: 700;
+}
+
+/* --- Indicador de Página --- */
+.prayer-footer {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ff1493;
+  background-color: #ffe6f0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Animação das Flores caindo nas Laterais --- */
+.flowers-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100px;
+  pointer-events: none; /* Evita bloquear cliques na interface */
+  z-index: 10;
+}
+
+.flowers-container.left {
+  left: 20px;
+}
+
+.flowers-container.right {
+  right: 20px;
+}
+
+.flower {
+  position: absolute;
+  top: -50px;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  animation: fall 8s linear infinite;
+}
+
+/* Variação de tempo e tamanho para efeito natural */
+.flowers-container .flower:nth-child(1) { left: 10px; animation-duration: 7s; animation-delay: 0s; font-size: 1.5rem; }
+.flowers-container .flower:nth-child(2) { left: 55px; animation-duration: 10s; animation-delay: 2s; font-size: 2.2rem; }
+.flowers-container .flower:nth-child(3) { left: 25px; animation-duration: 8s; animation-delay: 4s; font-size: 1.8rem; }
+.flowers-container .flower:nth-child(4) { left: 70px; animation-duration: 11s; animation-delay: 1s; font-size: 1.4rem; }
+.flowers-container .flower:nth-child(5) { left: 40px; animation-duration: 9s; animation-delay: 3s; font-size: 2rem; }
+
+@keyframes fall {
+  0% {
+    top: -50px;
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(25px) rotate(360deg);
+    opacity: 0;
+  }
 }
