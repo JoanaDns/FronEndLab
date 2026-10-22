@@ -1,18 +1,28 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+
+import Home from './pages/home'
 import './App.css'
+import Demo from './pages/Demo'
+import Pneu from './pages/Ex0081'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-     <div className="">
-      <h1>Inputs Controlados</h1>
-      <label htmlFor="">Login</label>
-      <input type="text" />
-     </div>
+    <div className="app">
+      <div className="flores-laterais">
+        {Array.from({ length: 20 }, (_, i) => (
+          <span key={i} style={{
+            left: `${i % 2 === 0 ? 1 + (i * 3) % 8 : 89 + (i * 3) % 8}%`,
+            animationDelay: `${i * 0.8}s`,
+            animationDuration: `${8 + (i % 5)}s`
+          }}>
+            ❀
+          </span>
+        ))}
+      </div>
+
+      <Demo />
+      <Home />
+      <Pneu />
+    </div>
   )
 }
 
