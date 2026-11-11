@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Poppins:wght@400;600;700;800&display=swap');
+
+.app, .home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 
 * {
   box-sizing: border-box;
@@ -17,3 +24,4 @@ body {
   padding: 40px 20px;
   line-height: 1.7;
 }
+

@@ -11,7 +11,6 @@ function App() {
 
   return (  
     <div className="app-container">
-      {/* Florzinhas caindo na lateral esquerda */}
       <div className="flowers-container left">
         <span className="flower">🌸</span>
         <span className="flower">🌺</span>
@@ -20,7 +19,6 @@ function App() {
         <span className="flower">🌸</span>
       </div>
 
-      {/* Florzinhas caindo na lateral direita */}
       <div className="flowers-container right">
         <span className="flower">🌸</span>
         <span className="flower">🌺</span>
@@ -29,7 +27,6 @@ function App() {
         <span className="flower">🌸</span>
       </div>
 
-      {/* Navegação de Botões */}
       <nav className="nav-buttons">
         <button 
           className={pagina === 0 ? 'active' : ''} 

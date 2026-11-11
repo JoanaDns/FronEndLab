@@ -3,6 +3,12 @@ import Home from './pages/home'
 import './App.css'
 import Demo from './pages/Demo'
 import Pneu from './pages/Ex0081'
+import HoHo from './pages/HoHo'
+import Bondinho from './pages/Bondinho'
+import Pum from './pages/Pum'
+import Combustivel from './pages/Combustivel'
+import Lesmas from './pages/Lesma'
+import Filme from './pages/Filme'
 
 function App() {
   return (
@@ -22,6 +28,12 @@ function App() {
       <Demo />
       <Home />
       <Pneu />
+      <HoHo/>
+      <Bondinho/>
+      <Pum/>
+      <Combustivel/>
+      <Lesmas/>
+      <Filme/>
     </div>
   )
 }

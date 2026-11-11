@@ -1,43 +1,60 @@
-import React, { useState } from 'react'
+
+import React, { useState } from "react";
+
 
 function Pneu() {
-    const [inputN, setInputN] = useState('')
-    const [inputM, setInputM] = useState('')
-    const [resultado, setResultado] = useState('Digite as pressões e aperte o botão')
+  const [inputN, setInputN] = useState("");
+  const [inputM, setInputM] = useState("");
+  const [resultado, setResultado] = useState(
+    "Digite as pressões e aperte o botão"
+  );
 
-    function calcularDiferenca() {
-        let N = Number(inputN)
-        let M = Number(inputM)
-        let diferenca = N - M
-
-        setResultado(diferenca)
+  function calcularDiferenca() {
+    if (inputN === "" || inputM === "") {
+      setResultado("Preencha as duas pressões.");
+      return;
     }
 
-    return (
-        <div className='pneu'>
-            <h1>0081 - Pneu</h1>
+    const N = Number(inputN);
+    const M = Number(inputM);
+    const diferenca = N - M;
 
-            <label>Pressão desejada</label>
-            <input
-                type="number"
-                value={inputN}
-                onChange={(e) => setInputN(e.target.value)}
-            />
+    setResultado(`Diferença: ${diferenca}`);
+  }
 
-            <label>Pressão lida</label>
-            <input
-                type="number"
-                value={inputM}
-                onChange={(e) => setInputM(e.target.value)}
-            />
+  return (
+    <div className="pneu">
+      <h1>0081 - Pneu</h1>
 
-            <button onClick={calcularDiferenca}>
-                Calcular diferença
-            </button>
+      <label htmlFor="pressaoDesejada">
+        Pressão desejada
+      </label>
+      <input
+        id="pressaoDesejada"
+        type="number"
+        step="any"
+        value={inputN}
+        onChange={(e) => setInputN(e.target.value)}
+      />
 
-            <p>{resultado}</p>
-        </div>
-    )
+      <label htmlFor="pressaoLida">
+        Pressão lida
+      </label>
+      <input
+        id="pressaoLida"
+        type="number"
+        step="any"
+        value={inputM}
+        onChange={(e) => setInputM(e.target.value)}
+      />
+
+      <button type="button" onClick={calcularDiferenca}>
+        Calcular diferença
+      </button>
+
+      <p aria-live="polite">{resultado}</p>
+    </div>
+  );
 }
 
-export default Pneu
+export default Pneu;
